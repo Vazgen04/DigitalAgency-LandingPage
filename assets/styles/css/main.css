@@ -47,6 +47,7 @@ body {
   top: 0%;
   left: 0%;
   background: #fff;
+  z-index: 999;
 }
 .header__inner {
   display: -webkit-box;
@@ -97,5 +98,109 @@ body {
 @media (max-width: 720px) {
   .header__inner .menu {
     display: block;
+  }
+}
+
+.intro {
+  padding: 400px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+@media (max-width: 1100px) {
+  .intro {
+    height: auto;
+    padding: 150px 0px;
+  }
+}
+.intro__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1100px) {
+  .intro__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.intro__inner .wrapper {
+  padding: 0px 20px;
+}
+@media (max-width: 720px) {
+  .intro__inner .wrapper {
+    padding: 0%;
+  }
+}
+.intro__inner .wrapper .title {
+  font-size: 3.75em;
+  text-align: start;
+  margin-top: 15px;
+  font-weight: 700;
+  line-height: 70px;
+  max-width: 530px;
+}
+@media (max-width: 720px) {
+  .intro__inner .wrapper .title {
+    font-size: 3em;
+  }
+}
+@media (max-width: 470px) {
+  .intro__inner .wrapper .title {
+    font-size: 2em;
+    line-height: unset;
+  }
+}
+.intro__inner .wrapper .title__head {
+  font-size: 0.875em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.intro__inner .wrapper .text {
+  max-width: 500px;
+  opacity: 50%;
+  margin-top: 60px;
+}
+.intro__inner .wrapper .button {
+  background: #4270EC;
+  font-size: 0.875em;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px 30px;
+  border-radius: 15px;
+  display: inline-block;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  margin-top: 60px;
+}
+.intro__inner .wrapper .button:hover {
+  background: rgb(1, 158, 14);
+}
+.intro__inner .banner {
+  max-width: 40%;
+}
+@media (max-width: 1100px) {
+  .intro__inner .banner {
+    max-width: 100%;
+    margin-top: 100px;
   }
 }
