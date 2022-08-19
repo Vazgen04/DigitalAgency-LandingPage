@@ -262,7 +262,7 @@ body {
 }
 
 .about {
-  padding: 150px 0px;
+  padding: 100px 0px;
 }
 .about__inner {
   display: -webkit-box;
@@ -348,7 +348,7 @@ body {
 }
 
 .portfolio {
-  padding: 150px 0px;
+  padding: 100px 0px;
 }
 .portfolio .title {
   font-size: 3em;
@@ -424,7 +424,7 @@ body {
 }
 
 .testimoni {
-  padding: 150px 0px;
+  padding: 100px 0px;
 }
 .testimoni .title {
   font-size: 3em;
@@ -522,7 +522,7 @@ body {
 }
 
 .blog {
-  padding: 150px 0px;
+  padding: 100px 0px;
 }
 .blog .title {
   font-size: 3em;
@@ -591,4 +591,60 @@ body {
 }
 .blog__inner .card__button:hover {
   opacity: 50%;
+}
+
+.contact {
+  padding: 100px 0px;
+}
+.contact__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 200px;
+     -moz-column-gap: 200px;
+          column-gap: 200px;
+  row-gap: 50px;
+  background: linear-gradient(79.42deg, #527FF6 15.73%, #E16DD9 79.76%, #FFCC70 112.35%);
+  padding: 100px 0px;
+  border-radius: 30px;
+}
+.contact__inner .title {
+  font-size: 2.5em;
+  max-width: 530px;
+  font-weight: 700;
+  color: #fff;
+  padding: 0px 20px;
+}
+@media (max-width: 530px) {
+  .contact__inner .title {
+    font-size: 1.5em;
+    max-width: 300px;
+  }
+}
+.contact__inner .button {
+  background: #4270EC;
+  font-size: 0.875em;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px 30px;
+  border-radius: 15px;
+  display: inline-block;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background: #fff;
+  color: #4270EC;
+}
+.contact__inner .button:hover {
+  background: rgb(1, 158, 14);
+}
+.contact__inner .button:hover {
+  color: #fff;
 }

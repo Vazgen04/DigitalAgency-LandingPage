@@ -1,0 +1,38 @@
+.contact{
+    padding: $SectionPadding;
+
+    &__inner{
+        @include FlexElement (center);
+        flex-wrap: wrap;
+        column-gap: 200px;
+        row-gap: 50px;
+        background: $Gradient;
+        padding: 100px 0px;
+        border-radius: 30px;
+
+        .title{
+            font-size: 2.5em;
+            max-width: 530px;
+            font-weight: 700;
+            color: #fff;
+            padding: 0px 20px;
+
+            @media (max-width: 530px) {
+                &{
+                    font-size: 1.5em;
+                    max-width: 300px;
+                }
+            }
+        }
+
+        .button{
+            @include Button;
+            background: #fff;
+            color: $SecondaryColor;
+
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}
