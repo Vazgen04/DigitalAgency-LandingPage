@@ -1,0 +1,51 @@
+.header{
+    padding: 30px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background: #fff;
+
+    &__inner{
+        @include FlexElement (space-between);
+
+        .nav{
+            @include FlexElement (center);
+
+            @media (max-width: 720px) {
+                &{
+                    display: none;
+                }
+            }
+
+            .link{
+                transition: opacity .3s;
+                font-size: 0.875em;
+
+                &:not(:first-child){
+                    margin-left: 40px;
+                }
+
+                &:not(.link_active):hover{
+                    opacity: 50%;
+                }
+            }
+
+            .link_active{
+                color: $SecondaryColor;
+                font-weight: 700;
+            }
+        }
+
+        .menu{
+            cursor: pointer;
+            display: none;
+
+            @media (max-width: 720px) {
+                &{
+                    display: block;
+                }
+            }
+        }
+    }
+}
