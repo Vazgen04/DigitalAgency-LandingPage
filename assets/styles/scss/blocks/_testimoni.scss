@@ -1,0 +1,62 @@
+.testimoni{
+    padding: $SectionPadding;
+
+    .title{
+        @include Title (center , 3em);
+
+        &__head{
+            @include TitleHead;
+            text-align: center;
+        }
+    }
+
+    &__inner{
+        @include FlexElement (center);
+        margin-top: 150px;
+        position: relative;
+
+        .background{
+            position:absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+
+            .swiper-slide {
+                text-align: center;
+                @include FlexElement (center);
+
+                .card{
+                    @include FlexElement (space-between);
+                    flex-direction: column;
+                    height: 500px;
+                    padding-bottom: 50px;
+
+                    @media (max-width: 440px) {
+                        height: 600px;
+                    }
+
+                    .text{
+                        max-width: 400px;
+                    }
+
+                    .name{
+                        text-transform: uppercase;
+                        font-size: 0.875em;
+                        font-weight: 500;
+
+                        span{
+                            font-size: 0.75em;
+                        }
+                    }
+                }
+              }
+          }
+    }
+}

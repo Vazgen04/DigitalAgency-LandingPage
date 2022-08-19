@@ -422,3 +422,101 @@ body {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
 }
+
+.testimoni {
+  padding: 150px 0px;
+}
+.testimoni .title {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 700;
+  line-height: 70px;
+}
+@media (max-width: 720px) {
+  .testimoni .title {
+    font-size: 3em;
+  }
+}
+@media (max-width: 470px) {
+  .testimoni .title {
+    font-size: 2em;
+    line-height: unset;
+  }
+}
+.testimoni .title__head {
+  font-size: 0.875em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.testimoni__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 150px;
+  position: relative;
+}
+.testimoni__inner .background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+.testimoni__inner .swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.testimoni__inner .swiper .swiper-slide {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.testimoni__inner .swiper .swiper-slide .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+  padding-bottom: 50px;
+}
+@media (max-width: 440px) {
+  .testimoni__inner .swiper .swiper-slide .card {
+    height: 600px;
+  }
+}
+.testimoni__inner .swiper .swiper-slide .card .text {
+  max-width: 400px;
+}
+.testimoni__inner .swiper .swiper-slide .card .name {
+  text-transform: uppercase;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+.testimoni__inner .swiper .swiper-slide .card .name span {
+  font-size: 0.75em;
+}
