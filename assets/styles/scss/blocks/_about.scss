@@ -1,15 +1,5 @@
-.intro{
-    padding: 400px 0px;
-    @include FlexElement (center);
-    flex-direction: column;
-    height: 100vh;
-
-    @media (max-width: 1100px) {
-        &{
-            height: auto;
-            padding: 150px 0px;
-        }
-    }
+.about{
+    padding: $SectionPadding;
 
     &__inner{
         @include FlexElement (space-between);
@@ -28,9 +18,10 @@
                    padding: 0%;
                 }
             }
+
             .title{
-                @include Title (start , 3.75em);
-                max-width: 530px;
+                @include Title ( start , 3em);
+                max-width: 450px;
 
                 &__head{
                     @include TitleHead;
@@ -39,13 +30,15 @@
 
             .text{
                 max-width: 500px;
+                margin-top: 50px;
                 opacity: 50%;
-                margin-top: 60px;
+                font-size: 0.875em;
+                line-height: 30px;
             }
 
             .button{
                 @include Button;
-                margin-top: 60px;
+                margin-top: 50px;
             }
         }
 
@@ -55,7 +48,7 @@
             @media (max-width: 1100px) {
                 &{
                     max-width: 100%;
-                    margin-top: 100px;
+                    margin-bottom: 100px;
                 }
             }
         }

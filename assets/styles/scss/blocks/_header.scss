@@ -6,6 +6,7 @@
     left: 0%;
     background: #fff;
     z-index: 999;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 
     &__inner{
         @include FlexElement (space-between);

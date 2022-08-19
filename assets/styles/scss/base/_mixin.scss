@@ -10,6 +10,19 @@
     margin-top: 15px;
     font-weight: 700;
     line-height: 70px;
+
+    @media (max-width: 720px) {
+        &{
+            font-size: 3em;
+        }
+    }
+
+    @media (max-width: 470px) {
+        &{
+            font-size: 2em;
+            line-height: unset;
+        }
+    }
 }
 
 @mixin TitleHead {
