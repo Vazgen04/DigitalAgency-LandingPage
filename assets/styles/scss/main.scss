@@ -1,5 +1,5 @@
 // Font
-// Font Here
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 // Reset
 @import "./base/reset";
@@ -12,6 +12,14 @@
 
 body{
     position: relative;
+    font-family: $PrimaryFont;
+}
+
+.container{
+    max-width: 1220px;
+    width: 100%;
+    padding: 0px 40px;
+    margin: 0% auto;
 }
 
 // Blocks Here
