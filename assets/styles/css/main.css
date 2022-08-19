@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1420px;
   width: 100%;
   padding: 0px 40px;
   margin: 0% auto;
@@ -519,4 +519,76 @@ body {
 }
 .testimoni__inner .swiper .swiper-slide .card .name span {
   font-size: 0.75em;
+}
+
+.blog {
+  padding: 150px 0px;
+}
+.blog .title {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: 700;
+  line-height: 70px;
+}
+@media (max-width: 720px) {
+  .blog .title {
+    font-size: 3em;
+  }
+}
+@media (max-width: 470px) {
+  .blog .title {
+    font-size: 2em;
+    line-height: unset;
+  }
+}
+.blog .title__head {
+  text-align: center;
+  font-size: 0.875em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.blog__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+  row-gap: 70px;
+  margin-top: 100px;
+}
+.blog__inner .card__img {
+  max-width: 100%;
+}
+.blog__inner .card__data {
+  font-size: 0.75em;
+  margin-top: 20px;
+}
+.blog__inner .card__data span {
+  color: rgb(1, 158, 14);
+  margin-left: 10px;
+}
+.blog__inner .card__title {
+  max-width: 350px;
+  margin-top: 15px;
+  font-weight: 700;
+}
+.blog__inner .card__button {
+  display: inline-block;
+  color: #4270EC;
+  margin-top: 10px;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.blog__inner .card__button:hover {
+  opacity: 50%;
 }

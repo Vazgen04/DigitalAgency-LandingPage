@@ -16,7 +16,7 @@ body{
 }
 
 .container{
-    max-width: 1320px;
+    max-width: 1420px;
     width: 100%;
     padding: 0px 40px;
     margin: 0% auto;
@@ -39,3 +39,6 @@ body{
 
 // Testimoni
 @import "./blocks/testimoni";
+
+// Blog
+@import "./blocks/blog";
