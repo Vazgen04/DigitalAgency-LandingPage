@@ -1,0 +1,47 @@
+.portfolio{
+    padding: $SectionPadding;
+
+    .title{
+        @include Title (start , 3em);
+
+        &__head{
+            @include TitleHead;
+        }
+    }
+
+    &__inner{
+        margin-top: 100px;
+        @include FlexElement (center);
+        flex-wrap: wrap;
+        column-gap: 60px;
+        row-gap: 50px;
+
+        .card{
+            cursor: pointer;
+            transition: transform .3s ;
+            border-radius: 30px;
+            position: relative;
+
+            &__img{
+                border-radius: 30px;
+                max-width: 100%;
+            }
+
+            &__arrow{
+                position: absolute;
+                bottom: 5%;
+                right: 5%;
+                z-index: 10;
+                transition: transform .3s;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+
+            &:hover{
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
