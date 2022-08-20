@@ -1,0 +1,53 @@
+.mobile{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s;
+
+    &__inner{
+        .top{
+            @include FlexElement (space-between);
+            padding: 30px 0px;
+        }
+
+        .nav{
+            @include FlexElement (center);
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 50px;
+
+            @media (max-height: 410px) {
+                &{
+                    display: block;
+                    margin-top: 10px;
+
+                }
+            }
+
+            .link{
+                font-size: 1em;
+                &:not(:first-child){
+                    margin-top: 20px;
+                }
+
+                @media (max-height: 410px) {
+                    &{
+                        display: inline;
+                        padding: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active{
+    visibility: visible;
+    opacity: 1;
+}
