@@ -1,0 +1,47 @@
+.footer{
+    padding: $SectionPadding;
+
+    &__inner{
+        @include FlexElement (space-between);
+        flex-wrap: wrap;
+        align-items: flex-start;
+        column-gap: 150px;
+        row-gap: 100px;
+
+        .list{
+            &__item{
+                &:not(:first-child){
+                    margin-top: 15px;
+                }
+
+                .title{
+                    font-weight: 500;
+                    font-size: 1.125em;
+                }
+
+                .link{
+                    opacity: 80%;
+                    transition: opacity .3s;
+
+                    &:hover{
+                        opacity: 50%;
+                    }
+                }
+
+                .text{
+                    max-width: 270px;
+                }
+            }
+
+            &__social{
+                @include FlexElement (center);
+
+                .link{
+                    &:not(:first-child){
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
