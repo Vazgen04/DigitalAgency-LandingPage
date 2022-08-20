@@ -4,6 +4,7 @@
   padding: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -85,12 +86,8 @@ body {
 .header__inner .nav .link:not(:first-child) {
   margin-left: 40px;
 }
-.header__inner .nav .link:not(.link_active):hover {
+.header__inner .nav .link:hover {
   opacity: 50%;
-}
-.header__inner .nav .link_active {
-  color: #4270EC;
-  font-weight: 700;
 }
 .header__inner .menu {
   cursor: pointer;

@@ -28,14 +28,9 @@
                     margin-left: 40px;
                 }
 
-                &:not(.link_active):hover{
+                &:hover{
                     opacity: 50%;
                 }
-            }
-
-            .link_active{
-                color: $SecondaryColor;
-                font-weight: 700;
             }
         }
 
